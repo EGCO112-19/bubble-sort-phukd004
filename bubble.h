@@ -20,12 +20,16 @@ void display(int value[], int N){
 void bubble(int a[], int N){
     int i;
     int j;
-    
+    int sorted;
+
     for(j=0;j<N-1;j++){
         if(a[j]>a[j+1]) // decending
             swap(&a[j],&a[j+1]);
+            sorted=1;
         display(a,N);
     }
+    if (sorted==0);
+      break;
     
     
 }
